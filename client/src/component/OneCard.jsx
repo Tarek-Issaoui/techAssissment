@@ -30,7 +30,12 @@ const OneCard = ({e}) => {
       </Card.Body>
       <Card.Img variant="none" src={rectangle} />
       <Card.Body>
-        <Card.Title className='seller'>Description</Card.Title>
+      <Stack direction="horizontal" gap={2} style={{justifyContent:"space-between"}}>
+          <Card.Title className='seller'>Description</Card.Title>
+        <div>
+          <Card.Img variant="none" src={vec} /><span>1200</span>
+        </div>
+      </Stack>
         <Card.Text>
         I will help you to Fix your problemes<br/>
         I will help you to Fix your problemes

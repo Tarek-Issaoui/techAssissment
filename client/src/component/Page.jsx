@@ -9,7 +9,9 @@ import DropdownButton from "react-bootstrap/DropdownButton"
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { Context } from './Context'
-
+import { Badge } from '@mui/material';
+// import Badge from 'react-bootstrap/Badge';
+// import { MDBBadge, MDBBtn } from 'mdb-react-ui-kit';
 const Page = () => {
   const [title,setTitle]=useState("")
   const [data,setData]=useContext(Context)
@@ -30,8 +32,8 @@ const Page = () => {
       </div>
       <div className='buttons' >
         <Button variant="outline-light" className='btnn'>Filters</Button>{' '}
-        <Button variant="light" className='btnn'>Tools Added Today</Button>{' '}
-        <Button variant="primary" className='btnn'>News Added Today</Button>{' '}
+        <Badge  badgeContent={4} color="primary"><Button variant="light" className='btnn'>Tools Added Today</Button></Badge>{' '}
+        <Badge  badgeContent={4} color="primary"><Button variant="primary" className='btnn'>News Added Today</Button></Badge>{' '}
         <DropdownButton variant="outline-light" title="verified" className='btnn'></DropdownButton>
       </div>
       <InputGroup className="mb-3" style={{width:"46%", marginLeft:"358px" ,marginTop:"25px"}}>
