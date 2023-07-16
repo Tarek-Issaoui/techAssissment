@@ -1,0 +1,10 @@
+.btntool{
+    width: 247px;
+    height: 48px;
+    flex-shrink: 0;
+    margin-right: 2px;
+}
+.tool{
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
